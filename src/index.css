@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Define scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* Track styles */
+::-webkit-scrollbar-track {
+  background: #000000; /* Background color of the track */
+}
+/* Handle styles */
+::-webkit-scrollbar-thumb {
+  background: #2afeb7; /* Color of the scrollbar handle */
+  border-radius: 14px; /* Radius of the scrollbar handle */
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #009c68; /* Color of the scrollbar handle on hover */
+}
