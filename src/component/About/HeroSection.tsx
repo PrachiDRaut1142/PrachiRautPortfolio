@@ -1,16 +1,15 @@
 import React from "react";
 import SocialIcons from "./SocialIcons";
-import Button from "../_Common/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faPhone } from "@fortawesome/free-solid-svg-icons";
 import Terminal from "./Terminal";
-
+import bgTexture from '../../assets/svg/bg-texture.svg';
 const HeroSection = () => {
   return (
     <section
       id="about"
       style={{
-        backgroundImage: `url('/assets/svg/bg-texture.svg')`,
+        backgroundImage: `url(${bgTexture})`,
         backgroundSize: "cover",
       }}
     >

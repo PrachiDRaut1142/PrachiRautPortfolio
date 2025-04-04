@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import ExperienceTimeline from "./ExperienceTimeline";
+import bgTexture from '../../assets/svg/bg-texture.svg';
 const ExperienceSection = () => {
   const [audio] = useState(() => new Audio('/assets/mp3/typing-sound.mp3'));
   const { ref, inView } = useInView({
@@ -35,7 +36,7 @@ const ExperienceSection = () => {
   }, [inView, userInteracted, audio]);
   return (
     <div id="experience" className="relative z-40 border-t border-[#25213b]">
-      <img alt="Hero" loading="lazy" width="1572" height="795" decoding="async" data-nimg="1" className="absolute top-0 -z-10" style={{ color: 'transparent' }} src="/assets/svg/bg-texture.svg"></img>
+      <img alt="Hero" loading="lazy" width="1572" height="795" decoding="async" data-nimg="1" className="absolute top-0 -z-10" style={{ color: 'transparent' }} src={bgTexture}></img>
       <div className="relative flex flex-col items-center justify-center min-h-screen text-white">
         <div className="flex justify-center mt-5 pt-10 lg:mt-0 lg:pt-0 pb-10">
           <div className="flex items-center space-x-2">

@@ -1,5 +1,5 @@
 import React from "react";
-
+import bgTexture from '../../assets/svg/bg-texture.svg';
 const educationData = [
     { year: "2020 - Present", degree: "Bachelor Degree", institution: "National University of Bangladesh" },
     { year: "2018 - 2020", degree: "Higher Secondary Certificate", institution: "Noakhali Islamia Kamil Madrasah" },
@@ -19,7 +19,7 @@ function EducationSection() {
                 decoding="async"
                 className="absolute top-0 -z-10 w-full"
                 style={{ color: "transparent" }}
-                src="/assets/svg/bg-texture.svg"
+                src={bgTexture}
             />
             <div className="relative flex flex-col items-center justify-center min-h-screen text-white mx-8 md:mx-12">
                 <div className="flex justify-center mt-5 py-20">

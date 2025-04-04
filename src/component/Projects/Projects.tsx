@@ -1,8 +1,7 @@
 import React from "react";
-import Button from "../_Common/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
+import bgTexture from '../../assets/svg/bg-texture.svg';
 const projects = [
   {
     title: "Portfolio",
@@ -11,7 +10,7 @@ const projects = [
     technologies: ["Angular", "Tailwind", "TypeScript", "Figma"],
     status: "Closed",
     date: "August - 2024",
-    image: "https://via.placeholder.com/300",
+    image: "https://images.unsplash.com/photo-1642132652806-8aa09801c2ab?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     github: "#",
     demo: "#",
   },
@@ -22,7 +21,7 @@ const projects = [
     technologies: ["PHP", "Laravel", "SQL", "Bootstrap"],
     status: "Closed",
     date: "May - 2024",
-    image: "https://via.placeholder.com/300",
+    image: "https://images.unsplash.com/photo-1642132652859-3ef5a1048fd1?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     github: "#",
     demo: "#",
   },
@@ -33,7 +32,7 @@ const projects = [
     technologies: ["Angular", "Tailwind", "TypeScript", "Figma"],
     status: "Closed",
     date: "August - 2024",
-    image: "https://via.placeholder.com/300",
+    image: "https://images.unsplash.com/photo-1642132652809-8c6ab1971169?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     github: "#",
     demo: "#",
   },
@@ -44,7 +43,7 @@ const projects = [
     technologies: ["PHP", "Laravel", "SQL", "Bootstrap"],
     status: "Closed",
     date: "May - 2024",
-    image: "https://via.placeholder.com/300",
+    image: "https://images.unsplash.com/photo-1642132652795-4a46f8ce789e?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     github: "#",
     demo: "#",
   },
@@ -53,7 +52,7 @@ const projects = [
 const Projects = () => {
   return (
     <div id="projects" className="relative z-40 border-t border-[#25213b]">
-      <img alt="Hero" loading="lazy" width="1572" height="795" decoding="async" data-nimg="1" className="absolute top-0 -z-10" style={{ color: 'transparent' }} src="/assets/svg/bg-texture.svg"></img>
+      <img alt="Hero" loading="lazy" width="1572" height="795" decoding="async" data-nimg="1" className="absolute top-0 -z-10" style={{ color: 'transparent' }} src={bgTexture}></img>
       <div className="relative flex flex-col items-center justify-center min-h-screen text-white mx-8 md:mx-12">
         <div className="flex justify-center mt-5 pt-10 pb-10 lg:mt-0 lg:pt-0">
           <div className="flex items-center space-x-2">

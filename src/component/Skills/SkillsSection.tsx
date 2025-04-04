@@ -10,6 +10,7 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import bgTexture from '../../assets/svg/bg-texture.svg';
 
 const skillsData = {
   backend: [
@@ -31,7 +32,7 @@ const skillsData = {
 const SkillsTreeDiagram = () => {
   return (
     <div id="skills" className="relative z-40 border-t border-[#25213b]">
-    <img alt="Hero" loading="lazy" width="1572" height="795" decoding="async" data-nimg="1" className="absolute top-0 -z-10" style={{ color: 'transparent' }} src="/assets/svg/bg-texture.svg"></img>
+    <img alt="Hero" loading="lazy" width="1572" height="795" decoding="async" data-nimg="1" className="absolute top-0 -z-10" style={{ color: 'transparent' }} src={bgTexture}></img>
     <div className="relative flex flex-col items-center justify-center min-h-screen text-white">
         <div className="flex justify-center lg:mt-0 lg:pt-0 pb-10">
           <div className="flex items-center space-x-2">
